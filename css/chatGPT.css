@@ -1,0 +1,44 @@
+/* .field {
+  width: 500px;
+  height: 300px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.element {
+  width: 50px;
+  height: 50px;
+  background-color: #ff0000;
+  position: absolute;
+  cursor: pointer;
+} */
+
+/* Additional styling can be added as needed */
+.field {
+  width: 500px;
+  height: 500px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.shape {
+  position: absolute;
+  cursor: pointer;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid blue; /* Цвет треугольника */
+}
+
+.rhombus {
+  width: 100px;
+  height: 100px;
+  background-color: red; /* Цвет ромба */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* Дополнительные стили для других треугольников и ромбов */
