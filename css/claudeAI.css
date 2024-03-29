@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .triangle {
@@ -9,68 +9,28 @@
   width: 0;
   height: 0;
   border-style: solid;
+  border-width: 100px 100px 0 0;
+  border-color: transparent;
+}
+
+.red {
+  border-right-color: red;
+  transform: rotate(90deg);
 }
 
 .green {
-  border-color: transparent transparent #6b8e23 transparent;
+  border-top-color: green;
+  right: 0;
 }
 
-.left {
-  border-width: 0 100px 150px 100px;
-  top: 150px;
-  left: 50px;
-}
-
-.right {
-  border-width: 0 100px 150px 100px;
-  top: 150px;
-  right: 50px;
-  transform: scaleX(-1);
-}
-
-.bottom-left {
-  border-width: 0 50px 100px 50px;
+.blue {
+  border-left-color: blue;
   bottom: 0;
-  left: 50px;
+  transform: rotate(270deg);
 }
 
-.bottom-right {
-  border-width: 0 50px 100px 50px;
-  bottom: 0;
-  right: 50px;
-  transform: scaleX(-1);
-}
-
-.square {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: #ff6347;
-  transform: rotate(45deg);
-}
-
-.square:nth-child(3) {
-  top: 0;
-  left: 100px;
-}
-
-.square:nth-child(4) {
-  top: 0;
-  right: 100px;
-}
-
-.square:nth-child(5) {
-  bottom: 0;
-  left: 100px;
-}
-
-.black {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-width: 50px 25px 0 25px;
-  border-color: #000 transparent transparent transparent;
-  transform: rotate(-45deg);
-  right: -25px;
-  bottom: -25px;
+.yellow {
+  border-bottom-color: yellow;
+  left: 0;
+  transform: rotate(180deg);
 }
