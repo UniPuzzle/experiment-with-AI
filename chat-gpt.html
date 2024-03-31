@@ -34,7 +34,7 @@
   </div>
 
   <div style="width: 200px; height: 200px; transform: rotate(45deg);">
-    <svg width="200" height="200" viewBox="0 0 200 200">
+    <svg id="svg-container" width="200" height="200" viewBox="0 0 200 200">
       <!-- Верхний левый треугольник -->
       <polygon points="0,0 100,0 0,100" fill="green" transform="rotate(180 50 50)" />
       <!-- Верхний правый треугольник -->
@@ -48,6 +48,21 @@
     </svg>
   </div>
 
+
+
+
+  <script>
+    document.getElementById('svg-container').addEventListener('click', function (event) {
+      var colors = [ 'purple', 'green', 'red', 'yellow', 'blue' ];
+      var target = event.target;
+
+      // Если элемент - полигон, изменяем его цвет
+      if (target.tagName === 'polygon') {
+        var randomColor = colors[ Math.floor(Math.random() * colors.length) ];
+        target.setAttribute('fill', randomColor);
+      }
+    });
+  </script>
 
 
 
