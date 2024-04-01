@@ -30,39 +30,52 @@
 //   });
 // });
 // ==============
-document.addEventListener("DOMContentLoaded", function () {
-  const shapes = document.querySelectorAll(".shape");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const shapes = document.querySelectorAll(".shape");
 
-  shapes.forEach((shape) => {
-    shape.addEventListener("click", function () {
-      // Обработка клика по фигуре
-      alert("Вы кликнули по фигуре!");
-    });
+//   shapes.forEach((shape) => {
+//     shape.addEventListener("click", function () {
+//       // Обработка клика по фигуре
+//       alert("Вы кликнули по фигуре!");
+//     });
 
-    shape.addEventListener("mousedown", function (event) {
-      // Обработка перемещения фигуры
-      let shiftX = event.clientX - shape.getBoundingClientRect().left;
-      let shiftY = event.clientY - shape.getBoundingClientRect().top;
+//     shape.addEventListener("mousedown", function (event) {
+//       // Обработка перемещения фигуры
+//       let shiftX = event.clientX - shape.getBoundingClientRect().left;
+//       let shiftY = event.clientY - shape.getBoundingClientRect().top;
 
-      shape.style.zIndex = 1000;
+//       shape.style.zIndex = 1000;
 
-      moveAt(event.pageX, event.pageY);
+//       moveAt(event.pageX, event.pageY);
 
-      function moveAt(pageX, pageY) {
-        shape.style.left = pageX - shiftX + "px";
-        shape.style.top = pageY - shiftY + "px";
-      }
+//       function moveAt(pageX, pageY) {
+//         shape.style.left = pageX - shiftX + "px";
+//         shape.style.top = pageY - shiftY + "px";
+//       }
 
-      function onMouseMove(event) {
-        moveAt(event.pageX, event.pageY);
-      }
+//       function onMouseMove(event) {
+//         moveAt(event.pageX, event.pageY);
+//       }
 
-      document.addEventListener("mousemove", onMouseMove);
+//       document.addEventListener("mousemove", onMouseMove);
 
-      shape.onmouseup = function () {
-        document.removeEventListener("mousemove", onMouseMove);
-        shape.onmouseup = null;
-      };
-    });
+//       shape.onmouseup = function () {
+//         document.removeEventListener("mousemove", onMouseMove);
+//         shape.onmouseup = null;
+//       };
+//     });
+//   });
+// });
+
+document
+  .getElementById("svg-container")
+  .addEventListener("click", function (event) {
+    var colors = ["purple", "green", "red", "yellow", "blue"];
+    var target = event.target;
+
+    // Если элемент - полигон, изменяем его цвет
+    if (target.tagName === "polygon") {
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      target.setAttribute("fill", randomColor);
+    }
   });
-});

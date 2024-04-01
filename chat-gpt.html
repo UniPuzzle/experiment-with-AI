@@ -49,25 +49,440 @@
   </div>
 
 
+  <div style="width: 200px; height: 200px;">
+    <svg width="200" height="200" viewBox="0 0 200 200">
+      <!-- Первый треугольник -->
+      <polygon points="100,0 150,50 100,100" fill="green" />
+      <!-- Второй треугольник -->
+      <polygon points="150,50 200,100 100,100" fill="green" />
+      <!-- Третий треугольник -->
+      <polygon points="200,100 150,150 100,100" fill="green" />
+      <!-- Четвертый треугольник -->
+      <polygon points="150,150 100,200 100,100" fill="green" />
+      <!-- Пятый треугольник -->
+      <polygon points="100,200 50,150 100,100" fill="green" />
+      <!-- Шестой треугольник -->
+      <polygon points="50,150 0,100 100,100" fill="green" />
+      <!-- Седьмой треугольник -->
+      <polygon points="0,100 50,50 100,100" fill="green" />
+      <!-- Восьмой треугольник -->
+      <polygon points="50,50 100,0 100,100" fill="green" />
+    </svg>
+  </div>
+
+  <svg width="200" height="200" viewBox="0 0 200 200">
+    <!-- Равнобедренный треугольник -->
+    <polygon points="100,25 50,175 150,175" fill="blue" />
+  </svg>
 
 
-  <script>
-    document.getElementById('svg-container').addEventListener('click', function (event) {
-      var colors = [ 'purple', 'green', 'red', 'yellow', 'blue' ];
-      var target = event.target;
+  <div>
+    <svg width="600" height="200" viewBox="0 0 600 200">
+      <!-- Первый треугольник -->
+      <polygon points="50,25 0,175 100,175" fill="blue" />
+      <!-- Второй треугольник -->
+      <polygon points="150,25 100,175 200,175" fill="green" />
+      <!-- Третий треугольник -->
+      <polygon points="250,25 200,175 300,175" fill="red" />
+      <!-- Четвертый треугольник -->
+      <polygon points="350,25 300,175 400,175" fill="orange" />
+      <!-- Пятый треугольник -->
+      <polygon points="450,25 400,175 500,175" fill="purple" />
+      <!-- Шестой треугольник -->
+      <polygon points="550,25 500,175 600,175" fill="yellow" />
+      <!-- Седьмой треугольник -->
+      <polygon points="650,25 600,175 700,175" fill="cyan" />
+      <!-- Восьмой треугольник -->
+      <polygon points="750,25 700,175 800,175" fill="magenta" />
+    </svg>
+  </div>
 
-      // Если элемент - полигон, изменяем его цвет
-      if (target.tagName === 'polygon') {
-        var randomColor = colors[ Math.floor(Math.random() * colors.length) ];
-        target.setAttribute('fill', randomColor);
-      }
-    });
-  </script>
+  <div>
+    <svg width="600" height="600" viewBox="0 0 600 600">
+      <!-- Октагон -->
+      <polygon points="300,100 418,100 500,182 500,300 418,382 300,382 218,300 218,182" fill="blue" />
+    </svg>
+  </div>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="display: flex; justify-content: center;">
+    <svg width="300" height="300" viewBox="0 0 300 300">
+      <!-- Октагон -->
+      <polygon points="150,0 
+                    262.93,37.07 
+                    300,150 
+                    262.93,262.93 
+                    150,300 
+                    37.07,262.93 
+                    0,150 
+                    37.07,37.07" fill="blue" />
+      <!-- Точки в углах октагона -->
+      <circle cx="150" cy="0" r="5" fill="red" />
+      <circle cx="262.93" cy="37.07" r="5" fill="red" />
+      <circle cx="300" cy="150" r="5" fill="red" />
+      <circle cx="262.93" cy="262.93" r="5" fill="red" />
+      <circle cx="150" cy="300" r="5" fill="red" />
+      <circle cx="37.07" cy="262.93" r="5" fill="red" />
+      <circle cx="0" cy="150" r="5" fill="red" />
+      <circle cx="37.07" cy="37.07" r="5" fill="red" />
+      <!-- Точка в центре октагона -->
+      <circle cx="150" cy="150" r="5" fill="black" />
+
+      <!-- Линии из центральной точки -->
+      <line x1="150" y1="150" x2="150" y2="0" stroke="black" />
+      <line x1="150" y1="150" x2="262.93" y2="37.07" stroke="black" />
+      <line x1="150" y1="150" x2="300" y2="150" stroke="black" />
+      <line x1="150" y1="150" x2="262.93" y2="262.93" stroke="black" />
+      <line x1="150" y1="150" x2="150" y2="300" stroke="black" />
+      <line x1="150" y1="150" x2="37.07" y2="262.93" stroke="black" />
+      <line x1="150" y1="150" x2="0" y2="150" stroke="black" />
+      <line x1="150" y1="150" x2="37.07" y2="37.07" stroke="black" />
+    </svg>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <svg width="300" height="300" viewBox="0 0 300 300">
+      <!-- Октагон -->
+      <polygon points="150,0 
+                    262.93,37.07 
+                    300,150 
+                    262.93,262.93 
+                    150,300 
+                    37.07,262.93 
+                    0,150 
+                    37.07,37.07" fill="blue" />
+      <!-- Точки в углах октагона -->
+      <circle cx="150" cy="0" r="5" fill="red" />
+      <circle cx="262.93" cy="37.07" r="5" fill="red" />
+      <circle cx="300" cy="150" r="5" fill="red" />
+      <circle cx="262.93" cy="262.93" r="5" fill="red" />
+      <circle cx="150" cy="300" r="5" fill="red" />
+      <circle cx="37.07" cy="262.93" r="5" fill="red" />
+      <circle cx="0" cy="150" r="5" fill="red" />
+      <circle cx="37.07" cy="37.07" r="5" fill="red" />
+      <!-- Точка в центре октагона -->
+      <circle cx="150" cy="150" r="5" fill="black" />
+
+      <!-- Линии, соединяющие красные точки с центральной точкой -->
+      <line x1="150" y1="150" x2="150" y2="0" stroke="black" />
+      <line x1="150" y1="150" x2="262.93" y2="37.07" stroke="black" />
+      <line x1="150" y1="150" x2="300" y2="150" stroke="black" />
+      <line x1="150" y1="150" x2="262.93" y2="262.93" stroke="black" />
+      <line x1="150" y1="150" x2="150" y2="300" stroke="black" />
+      <line x1="150" y1="150" x2="37.07" y2="262.93" stroke="black" />
+      <line x1="150" y1="150" x2="0" y2="150" stroke="black" />
+      <line x1="150" y1="150" x2="37.07" y2="37.07" stroke="black" />
+    </svg>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <svg width="300" height="300" viewBox="0 0 300 300">
+      <!-- Октагон -->
+      <polygon points="150,0 
+                    262.93,37.07 
+                    300,150 
+                    262.93,262.93 
+                    150,300 
+                    37.07,262.93 
+                    0,150 
+                    37.07,37.07" fill="blue" />
+      <!-- Точки в углах октагона -->
+      <circle cx="150" cy="0" r="5" fill="red" />
+      <circle cx="262.93" cy="37.07" r="5" fill="red" />
+      <circle cx="300" cy="150" r="5" fill="red" />
+      <circle cx="262.93" cy="262.93" r="5" fill="red" />
+      <circle cx="150" cy="300" r="5" fill="red" />
+      <circle cx="37.07" cy="262.93" r="5" fill="red" />
+      <circle cx="0" cy="150" r="5" fill="red" />
+      <circle cx="37.07" cy="37.07" r="5" fill="red" />
+      <!-- Точка в центре октагона -->
+      <circle cx="150" cy="150" r="5" fill="black" />
+
+      <!-- Линии, соединяющие красные точки с центральной точкой -->
+      <line x1="150" y1="150" x2="150" y2="0" stroke="black" />
+      <line x1="150" y1="150" x2="262.93" y2="37.07" stroke="black" />
+      <line x1="150" y1="150" x2="300" y2="150" stroke="black" />
+      <line x1="150" y1="150" x2="262.93" y2="262.93" stroke="black" />
+      <line x1="150" y1="150" x2="150" y2="300" stroke="black" />
+      <line x1="150" y1="150" x2="37.07" y2="262.93" stroke="black" />
+      <line x1="150" y1="150" x2="0" y2="150" stroke="black" />
+      <line x1="150" y1="150" x2="37.07" y2="37.07" stroke="black" />
+
+      <!-- Линии, соединяющие красные точки между собой -->
+      <line x1="150" y1="0" x2="262.93" y2="37.07" stroke="red" />
+      <line x1="150" y1="0" x2="300" y2="150" stroke="red" />
+      <line x1="150" y1="0" x2="262.93" y2="262.93" stroke="red" />
+      <line x1="150" y1="0" x2="150" y2="300" stroke="red" />
+      <line x1="150" y1="0" x2="37.07" y2="262.93" stroke="red" />
+      <line x1="150" y1="0" x2="0" y2="150" stroke="red" />
+      <line x1="150" y1="0" x2="37.07" y2="37.07" stroke="red" />
+      <line x1="262.93" y1="37.07" x2="300" y2="150" stroke="red" />
+      <line x1="262.93" y1="37.07" x2="262.93" y2="262.93" stroke="red" />
+      <line x1="262.93" y1="37.07" x2="150" y2="300" stroke="red" />
+      <line x1="262.93" y1="37.07" x2="37.07" y2="262.93" stroke="red" />
+      <line x1="262.93" y1="37.07" x2="0" y2="150" stroke="red" />
+      <line x1="262.93" y1="37.07" x2="37.07" y2="37.07" stroke="red" />
+      <line x1="300" y1="150" x2="262.93" y2="262.93" stroke="red" />
+      <line x1="300" y1="150" x2="150" y2="300" stroke="red" />
+      <line x1="300" y1="150" x2="37.07" y2="262.93" stroke="red" />
+      <line x1="300" y1="150" x2="0" y2="150" stroke="red" />
+      <line x1="300" y1="150" x2="37.07" y2="37.07" stroke="red" />
+      <line x1="262.93" y1="262.93" x2="150" y2="300" stroke="red" />
+      <line x1="262.93" y1="262.93" x2="37.07" y2="262.93" stroke="red" />
+      <line x1="262.93" y1="262.93" x2="0" y2="150" stroke="red" />
+      <line x1="262.93" y1="262.93" x2="37.07" y2="37.07" stroke="red" />
+      <line x1="150" y1="300" x2="37.07" y2="262.93" stroke="red" />
+      <line x1="150" y1="300" x2="0" y2="150" stroke="red" />
+      <line x1="150" y1="300" x2="37.07" y2="37.07" stroke="red" />
+      <line x1="37.07" y1="262.93" x2="0" y2="150" stroke="red" />
+      <line x1="37.07" y1="262.93" x2="37.07" y2="37.07" stroke="red" />
+      <line x1="0" y1="150" x2="37.07" y2="37.07" stroke="red" />
+    </svg>
+  </div>
+
+
+  <div style="display: flex; justify-content: center;">
+    <svg width="300" height="300" viewBox="0 0 300 300">
+      <!-- Октагон -->
+      <polygon points="150,0 
+                      262.93,37.07 
+                      300,150 
+                      262.93,262.93 
+                      150,300 
+                      37.07,262.93 
+                      0,150 
+                      37.07,37.07" fill="blue" />
+      <!-- Точки в углах октагона -->
+      <circle cx="150" cy="0" r="5" fill="red" />
+      <circle cx="262.93" cy="37.07" r="5" fill="red" />
+      <circle cx="300" cy="150" r="5" fill="red" />
+      <circle cx="262.93" cy="262.93" r="5" fill="red" />
+      <circle cx="150" cy="300" r="5" fill="red" />
+      <circle cx="37.07" cy="262.93" r="5" fill="red" />
+      <circle cx="0" cy="150" r="5" fill="red" />
+      <circle cx="37.07" cy="37.07" r="5" fill="red" />
+      <!-- Точка в центре октагона -->
+      <circle cx="150" cy="150" r="5" fill="black" />
+
+      <!-- Линии, соединяющие красные точки между собой -->
+      <line x1="150" y1="0" x2="262.93" y2="37.07" stroke="red" />
+      <line x1="262.93" y1="37.07" x2="300" y2="150" stroke="red" />
+      <line x1="300" y1="150" x2="262.93" y2="262.93" stroke="red" />
+      <line x1="262.93" y1="262.93" x2="150" y2="300" stroke="red" />
+      <line x1="150" y1="300" x2="37.07" y2="262.93" stroke="red" />
+      <line x1="37.07" y1="262.93" x2="0" y2="150" stroke="red" />
+      <line x1="0" y1="150" x2="37.07" y2="37.07" stroke="red" />
+      <line x1="37.07" y1="37.07" x2="150" y2="0" stroke="red" />
+
+      <!-- Линии из центра к каждой точке -->
+      <line x1="150" y1="150" x2="150" y2="0" stroke="black" />
+      <line x1="150" y1="150" x2="262.93" y2="37.07" stroke="black" />
+      <line x1="150" y1="150" x2="300" y2="150" stroke="black" />
+      <line x1="150" y1="150" x2="262.93" y2="262.93" stroke="black" />
+      <line x1="150" y1="150" x2="150" y2="300" stroke="black" />
+      <line x1="150" y1="150" x2="37.07" y2="262.93" stroke="black" />
+      <line x1="150" y1="150" x2="0" y2="150" stroke="black" />
+      <line x1="150" y1="150" x2="37.07" y2="37.07" stroke="black" />
+    </svg>
+  </div>
+
+
+
+
+  <div>
+    <svg width="800" height="200" viewBox="0 0 800 200">
+      <!-- Первый треугольник -->
+      <polygon points="50,25 0,175 100,175" fill="blue" />
+      <!-- Второй треугольник -->
+      <polygon points="150,25 100,175 200,175" fill="green" />
+      <!-- Третий треугольник -->
+      <polygon points="250,25 200,175 300,175" fill="red" />
+      <!-- Четвертый треугольник -->
+      <polygon points="350,25 300,175 400,175" fill="orange" />
+      <!-- Пятый треугольник -->
+      <polygon points="450,25 400,175 500,175" fill="purple" />
+      <!-- Шестой треугольник -->
+      <polygon points="550,25 500,175 600,175" fill="yellow" />
+      <!-- Седьмой треугольник -->
+      <polygon points="650,25 600,175 700,175" fill="cyan" />
+      <!-- Восьмой треугольник -->
+      <polygon points="750,25 700,175 800,175" fill="magenta" />
+
+      <!-- Точки в верхних вершинах треугольников -->
+      <circle cx="50" cy="25" r="3" fill="black" />
+      <circle cx="150" cy="25" r="3" fill="black" />
+      <circle cx="250" cy="25" r="3" fill="black" />
+      <circle cx="350" cy="25" r="3" fill="black" />
+      <circle cx="450" cy="25" r="3" fill="black" />
+      <circle cx="550" cy="25" r="3" fill="black" />
+      <circle cx="650" cy="25" r="3" fill="black" />
+      <circle cx="750" cy="25" r="3" fill="black" />
+    </svg>
+  </div>
+
+  <div>
+    <svg width="800" height="800" viewBox="0 0 800 800">
+      <!-- Первый треугольник -->
+      <polygon points="200,100 100,300 300,300" fill="blue" />
+      <!-- Второй треугольник -->
+      <polygon points="200,100 100,300 300,300" fill="green" transform="rotate(45 400 400)" />
+      <!-- Третий треугольник -->
+      <polygon points="200,100 100,300 300,300" fill="red" transform="rotate(90 400 400)" />
+      <!-- Четвертый треугольник -->
+      <polygon points="200,100 100,300 300,300" fill="orange" transform="rotate(135 400 400)" />
+      <!-- Пятый треугольник -->
+      <polygon points="200,100 100,300 300,300" fill="purple" transform="rotate(180 400 400)" />
+      <!-- Шестой треугольник -->
+      <polygon points="200,100 100,300 300,300" fill="yellow" transform="rotate(225 400 400)" />
+      <!-- Седьмой треугольник -->
+      <polygon points="200,100 100,300 300,300" fill="cyan" transform="rotate(270 400 400)" />
+      <!-- Восьмой треугольник -->
+      <polygon points="200,100 100,300 300,300" fill="magenta" transform="rotate(315 400 400)" />
+    </svg>
+  </div>
+
+  <div>
+    <svg width="800" height="800" viewBox="0 0 800 800">
+      <!-- Первый треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="blue" />
+      <!-- Второй треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="green" transform="rotate(45 400 400)" />
+      <!-- Третий треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="red" transform="rotate(90 400 400)" />
+      <!-- Четвертый треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="orange" transform="rotate(135 400 400)" />
+      <!-- Пятый треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="purple" transform="rotate(180 400 400)" />
+      <!-- Шестой треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="yellow" transform="rotate(225 400 400)" />
+      <!-- Седьмой треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="cyan" transform="rotate(270 400 400)" />
+      <!-- Восьмой треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="magenta" transform="rotate(315 400 400)" />
+
+      <!-- Точка в центре SVG -->
+      <circle cx="400" cy="400" r="5" fill="black" />
+    </svg>
+  </div>
+
+  <div>
+    <svg width="800" height="800" viewBox="0 0 800 800">
+      <!-- Первый треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="blue" />
+      <!-- Второй треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="green" transform="rotate(45 400 400)" />
+      <!-- Третий треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="red" transform="rotate(90 400 400)" />
+      <!-- Четвертый треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="orange" transform="rotate(135 400 400)" />
+      <!-- Пятый треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="purple" transform="rotate(180 400 400)" />
+      <!-- Шестой треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="yellow" transform="rotate(225 400 400)" />
+      <!-- Седьмой треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="cyan" transform="rotate(270 400 400)" />
+      <!-- Восьмой треугольник -->
+      <polygon points="300,100 250,200 350,200" fill="magenta" transform="rotate(315 400 400)" />
+
+      <!-- Точка в центре SVG -->
+      <circle cx="400" cy="400" r="5" fill="black" />
+
+      <!-- Линии, соединяющие верхние вершины треугольников с центром SVG -->
+      <line x1="300" y1="100" x2="400" y2="400" stroke="black" />
+      <line x1="250" y1="200" x2="400" y2="400" stroke="black" />
+      <line x1="350" y1="200" x2="400" y2="400" stroke="black" />
+    </svg>
+  </div>
+
+
+
+  <div style="display: flex; justify-content: space-around;">
+    <!-- Первый треугольник -->
+    <div
+      style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid blue;">
+    </div>
+    <!-- Второй треугольник -->
+    <div
+      style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid green;">
+    </div>
+    <!-- Третий треугольник -->
+    <div
+      style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid red;">
+    </div>
+    <!-- Четвертый треугольник -->
+    <div
+      style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid orange;">
+    </div>
+    <!-- Пятый треугольник -->
+    <div
+      style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid purple;">
+    </div>
+    <!-- Шестой треугольник -->
+    <div
+      style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid yellow;">
+    </div>
+    <!-- Седьмой треугольник -->
+    <div
+      style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid cyan;">
+    </div>
+    <!-- Восьмой треугольник -->
+    <div
+      style="width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 100px solid magenta;">
+    </div>
+  </div>
+
+
+
+
+
+  <svg width="300" height="300" viewBox="0 0 300 300">
+    <!-- Правильный октагон -->
+    <polygon points="150,0 
+                  262.93,37.07 
+                  300,150 
+                  262.93,262.93 
+                  150,300 
+                  37.07,262.93 
+                  0,150 
+                  37.07,37.07" fill="none" stroke="black" />
+  </svg>
+
+  <svg width="300" height="300" viewBox="0 0 300 300">
+    <!-- Правильный октагон -->
+    <polygon points="150,0 
+                    262.93,37.07 
+                    300,150 
+                    262.93,262.93 
+                    150,300 
+                    37.07,262.93 
+                    0,150 
+                    37.07,37.07" fill="none" stroke="black" />
+    <!-- 8 равнобедренных треугольников -->
+    <polygon points="150,50 168,100 132,100" fill="blue" />
+    <polygon points="262.93,87.07 280.93,137.07 244.93,137.07" fill="green" />
+    <polygon points="300,200 318,250 282,250" fill="red" />
+    <polygon points="262.93,312.93 280.93,362.93 244.93,362.93" fill="orange" />
+    <polygon points="150,350 168,400 132,400" fill="purple" />
+    <polygon points="37.07,312.93 55.07,362.93 19.07,362.93" fill="yellow" />
+    <polygon points="0,200 18,250 -18,250" fill="cyan" />
+    <polygon points="37.07,87.07 55.07,137.07 19.07,137.07" fill="magenta" />
+  </svg>
 
 
   <script src="./js/chatGPT.js"></script>
